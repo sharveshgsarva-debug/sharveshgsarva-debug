@@ -1,0 +1,30 @@
+<svg fill="none" viewBox="0 0 1000 32" width="100%" height="32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="divider-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="20%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="45%" stop-color="#c084fc" stop-opacity="1" />
+      <stop offset="55%" stop-color="#f43f5e" stop-opacity="1" />
+      <stop offset="80%" stop-color="#22c55e" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0" />
+    </linearGradient>
+    <filter id="div-glow" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Glowing horizontal beam -->
+  <line x1="50" y1="16" x2="950" y2="16" stroke="url(#divider-grad)" stroke-width="2" filter="url(#div-glow)" />
+
+  <!-- Center node -->
+  <circle cx="500" cy="16" r="4.5" fill="#ffffff" filter="url(#div-glow)" />
+  <circle cx="500" cy="16" r="2" fill="#c084fc" />
+
+  <!-- Sub nodes -->
+  <circle cx="350" cy="16" r="3" fill="#38bdf8" filter="url(#div-glow)" />
+  <circle cx="650" cy="16" r="3" fill="#f43f5e" filter="url(#div-glow)" />
+</svg>
