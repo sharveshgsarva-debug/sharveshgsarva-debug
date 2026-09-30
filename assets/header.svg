@@ -1,12 +1,12 @@
-<svg fill="none" viewBox="0 0 1200 440" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 1200 450" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
         .container {
           position: relative;
           width: 1200px;
-          height: 440px;
-          background: radial-gradient(circle at 15% 10%, #201735 0%, #070b14 60%, #030712 100%);
+          height: 450px;
+          background: radial-gradient(circle at 18% 12%, #22153b 0%, #080d1a 60%, #030712 100%);
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
           overflow: hidden;
           color: #ffffff;
@@ -30,33 +30,33 @@
         /* Glowing Planet Horizon */
         .planet {
           position: absolute;
-          top: -240px;
+          top: -250px;
           left: -120px;
-          width: 750px;
-          height: 420px;
+          width: 780px;
+          height: 440px;
           border-radius: 50%;
-          background: radial-gradient(circle at 50% 60%, #fdba74 0%, #f43f5e 40%, #881337 70%, #1e1b4b 100%);
-          filter: drop-shadow(0 0 45px rgba(244, 63, 94, 0.65)) drop-shadow(0 0 90px rgba(168, 85, 247, 0.4));
-          border-bottom: 2px solid rgba(254, 215, 170, 0.9);
+          background: radial-gradient(circle at 50% 60%, #fdba74 0%, #f43f5e 42%, #881337 72%, #1e1b4b 100%);
+          filter: drop-shadow(0 0 50px rgba(244, 63, 94, 0.7)) drop-shadow(0 0 100px rgba(168, 85, 247, 0.45));
+          border-bottom: 2px solid rgba(254, 215, 170, 0.95);
           transform: rotate(-12deg);
         }
 
         .planet-glow-ring {
           position: absolute;
-          top: -250px;
+          top: -260px;
           left: -130px;
-          width: 770px;
-          height: 440px;
+          width: 800px;
+          height: 460px;
           border-radius: 50%;
-          border-bottom: 3px solid rgba(253, 186, 116, 0.85);
-          filter: blur(4px);
+          border-bottom: 3.5px solid rgba(253, 186, 116, 0.9);
+          filter: blur(5px);
           transform: rotate(-12deg);
         }
 
-        /* Floating Drone */
+        /* Floating Autonomous Drone */
         @keyframes float-drone {
           0%, 100% { transform: translateY(0px) rotate(0deg); }
-          50% { transform: translateY(-12px) rotate(1.5deg); }
+          50% { transform: translateY(-14px) rotate(1.5deg); }
         }
 
         @keyframes rotor-spin {
@@ -66,20 +66,15 @@
 
         .drone-wrap {
           position: absolute;
-          top: 45px;
-          right: 90px;
+          top: 40px;
+          right: 85px;
           animation: float-drone 4.5s ease-in-out infinite;
         }
 
         /* Circuit line energy flow */
-        @keyframes line-flow {
-          0% { stroke-dashoffset: 600; }
-          100% { stroke-dashoffset: 0; }
-        }
-
         @keyframes pulse-glow {
-          0%, 100% { filter: drop-shadow(0 0 6px #a855f7) drop-shadow(0 0 12px #38bdf8); }
-          50% { filter: drop-shadow(0 0 14px #c084fc) drop-shadow(0 0 24px #38bdf8); }
+          0%, 100% { filter: drop-shadow(0 0 6px #a855f7) drop-shadow(0 0 14px #38bdf8); }
+          50% { filter: drop-shadow(0 0 16px #c084fc) drop-shadow(0 0 28px #38bdf8); }
         }
 
         .circuit-line {
@@ -91,32 +86,32 @@
         /* Content block */
         .content {
           position: absolute;
-          top: 140px;
+          top: 135px;
           left: 140px;
-          max-width: 680px;
+          max-width: 720px;
           z-index: 10;
         }
 
         .badge-tag {
           display: inline-flex;
           align-items: center;
-          gap: 6px;
-          padding: 4px 12px;
-          background: rgba(168, 85, 247, 0.15);
-          border: 1px solid rgba(192, 132, 252, 0.4);
+          gap: 8px;
+          padding: 5px 14px;
+          background: rgba(168, 85, 247, 0.18);
+          border: 1px solid rgba(192, 132, 252, 0.45);
           border-radius: 20px;
-          font-size: 11px;
-          font-weight: 600;
+          font-size: 11.5px;
+          font-weight: 700;
           letter-spacing: 1.2px;
-          color: #e9d5ff;
+          color: #f3e8ff;
           text-transform: uppercase;
-          margin-bottom: 14px;
-          box-shadow: 0 0 15px rgba(168, 85, 247, 0.25);
+          margin-bottom: 12px;
+          box-shadow: 0 0 16px rgba(168, 85, 247, 0.3);
         }
 
         .badge-dot {
-          width: 6px;
-          height: 6px;
+          width: 7px;
+          height: 7px;
           background: #38bdf8;
           border-radius: 50%;
           box-shadow: 0 0 8px #38bdf8;
@@ -125,8 +120,8 @@
         .title {
           font-size: 52px;
           font-weight: 800;
-          line-height: 1.1;
-          margin: 0 0 16px 0;
+          line-height: 1.08;
+          margin: 0 0 14px 0;
           letter-spacing: -0.03em;
           background: linear-gradient(180deg, #ffffff 30%, #e2e8f0 70%, #94a3b8 100%);
           -webkit-background-clip: text;
@@ -134,30 +129,42 @@
           filter: drop-shadow(0 2px 10px rgba(0,0,0,0.5));
         }
 
+        .name-highlight {
+          font-size: 20px;
+          font-weight: 600;
+          color: #38bdf8;
+          margin-bottom: 8px;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
         .subtitle {
-          font-size: 17px;
-          line-height: 1.5;
+          font-size: 15.5px;
+          line-height: 1.55;
           color: #94a3b8;
-          margin: 0 0 24px 0;
-          max-width: 620px;
+          margin: 0 0 22px 0;
+          max-width: 650px;
           font-weight: 400;
         }
 
         .cta-container {
           display: flex;
           align-items: center;
-          gap: 16px;
+          gap: 12px;
+          flex-wrap: wrap;
         }
 
         .status-pill {
           display: inline-flex;
           align-items: center;
           gap: 8px;
-          padding: 8px 16px;
-          background: rgba(15, 23, 42, 0.7);
-          border: 1px solid rgba(56, 189, 248, 0.3);
+          padding: 7px 14px;
+          background: rgba(15, 23, 42, 0.75);
+          border: 1px solid rgba(56, 189, 248, 0.35);
           border-radius: 8px;
-          font-size: 13px;
+          font-size: 12.5px;
+          font-weight: 500;
           color: #cbd5e1;
           backdrop-filter: blur(8px);
         }
@@ -169,7 +176,7 @@
           width: 38px;
           height: 38px;
           background: #0f172a;
-          border: 1px solid rgba(168, 85, 247, 0.5);
+          border: 1px solid rgba(168, 85, 247, 0.6);
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -177,7 +184,7 @@
           color: #c084fc;
           font-weight: bold;
           font-size: 14px;
-          box-shadow: 0 0 16px rgba(168, 85, 247, 0.5);
+          box-shadow: 0 0 18px rgba(168, 85, 247, 0.55);
           z-index: 20;
         }
 
@@ -206,7 +213,7 @@
         <div class="planet-glow-ring"></div>
 
         <!-- Flowing circuit SVG trace -->
-        <svg style="position: absolute; top: 0; left: 0; width: 200px; height: 440px; z-index: 5;" viewBox="0 0 200 440">
+        <svg style="position: absolute; top: 0; left: 0; width: 200px; height: 450px; z-index: 5;" viewBox="0 0 200 450">
           <defs>
             <linearGradient id="circuit-grad" x1="0%" y1="0%" x2="0%" y2="100%">
               <stop offset="0%" stop-color="#fdba74" stop-opacity="0.9" />
@@ -219,7 +226,7 @@
               <feComposite in="SourceGraphic" in2="blur" operator="over" />
             </filter>
           </defs>
-          <path d="M 120 40 C 90 70, 82 120, 82 220 L 82 440" 
+          <path d="M 120 40 C 90 70, 82 120, 82 220 L 82 450" 
                 fill="none" 
                 stroke="url(#circuit-grad)" 
                 stroke-width="3" 
@@ -231,14 +238,14 @@
         <!-- Code Symbol Pill on the circuit line -->
         <div class="code-pill">&lt;&nbsp;&gt;</div>
 
-        <!-- GitHub Drone Illustration (Upper Right) -->
+        <!-- Autonomous Robotics Drone (Upper Right) -->
         <div class="drone-wrap">
           <svg width="260" height="150" viewBox="0 0 260 150" fill="none">
             <defs>
               <linearGradient id="drone-rotor-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.7"/>
-                <stop offset="50%" stop-color="#818cf8" stop-opacity="0.3"/>
-                <stop offset="100%" stop-color="#22c55e" stop-opacity="0.8"/>
+                <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.75"/>
+                <stop offset="50%" stop-color="#818cf8" stop-opacity="0.35"/>
+                <stop offset="100%" stop-color="#22c55e" stop-opacity="0.85"/>
               </linearGradient>
               <linearGradient id="drone-body-grad" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop offset="0%" stop-color="#334155"/>
@@ -251,7 +258,7 @@
             <!-- Drone Central Hub -->
             <rect x="105" y="42" width="50" height="24" rx="6" fill="url(#drone-body-grad)" stroke="#475569" stroke-width="1"/>
             <circle cx="130" cy="54" r="5" fill="#38bdf8" filter="drop-shadow(0 0 8px #38bdf8)"/>
-            <!-- Lower payload / camera module -->
+            <!-- Lower LiDAR & sensor payload -->
             <path d="M 115 66 L 145 66 L 140 85 L 120 85 Z" fill="#1e293b" stroke="#334155" stroke-width="1"/>
             <rect x="124" y="74" width="12" height="6" rx="2" fill="#22c55e" filter="drop-shadow(0 0 6px #22c55e)"/>
             <!-- Landing gear legs -->
@@ -266,20 +273,28 @@
         <div class="content">
           <div class="badge-tag">
             <span class="badge-dot"></span>
-            GitHub Universe // Developer Space
+            Robotics &bull; Autonomous Systems &bull; EV Tech
+          </div>
+          <div class="name-highlight">
+            <span>⚡ Sharvesh G</span>
+            <span style="color: #64748b; font-weight: 400; font-size: 14px;">| Chennai, Tamil Nadu</span>
           </div>
           <h1 class="title">Let’s build from here</h1>
           <p class="subtitle">
-            Harnessed for productivity. Designed for innovation. Building scalable software, modern web platforms, and open-source solutions.
+            Electrical &amp; Electronics Engineering student specializing in ROS 2 autonomous navigation, SLAM robotics, smart bidirectional power electronics, and EV battery management.
           </p>
           <div class="cta-container">
             <div class="status-pill">
               <span class="status-dot"></span>
-              <span>Available for collaboration</span>
+              <span>Available for Projects &amp; Research</span>
             </div>
-            <div class="status-pill" style="border-color: rgba(168, 85, 247, 0.35);">
-              <span style="color: #c084fc;">⚡</span>
-              <span>Full-Stack &amp; Systems</span>
+            <div class="status-pill" style="border-color: rgba(168, 85, 247, 0.45);">
+              <span style="color: #c084fc;">🤖</span>
+              <span>ROS 2 &bull; SLAM &bull; LiDAR</span>
+            </div>
+            <div class="status-pill" style="border-color: rgba(56, 189, 248, 0.45);">
+              <span style="color: #38bdf8;">🔋</span>
+              <span>EV Battery &bull; Smart IoT</span>
             </div>
           </div>
         </div>
